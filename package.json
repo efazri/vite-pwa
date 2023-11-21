@@ -1,0 +1,28 @@
+{
+  "name": "vite-pwa-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator",
+    "serve": "cd ./dist && http-server && cd .."
+  },
+  "dependencies": {
+    "vue": "^3.3.8",
+    "workbox-background-sync": "^7.0.0",
+    "workbox-core": "^7.0.0",
+    "workbox-precaching": "^7.0.0",
+    "workbox-routing": "^7.0.0",
+    "workbox-strategies": "^7.0.0",
+    "workbox-window": "^7.0.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "0.0.11",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.0",
+    "vite-plugin-pwa": "^0.17.0"
+  }
+}
